@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <!-- THÊM TIÊU ĐỀ -->
+    <div class="header">ICT-VID</div>
+
+    <div>
+      <div class="main">
+        <div class="left">
+          <h2>Trang web xem video miễn phí</h2>
+          <p>Đã có tài khoản?</p>
+          <p>
+            <a class="loginLink" href="#" onclick="showDangNhap()">Đăng nhập</a>
+          </p>
+          <p>Nếu bạn chưa có tài khoản - Đăng kí tại đây?</p>
+          <p>
+            <a class="signupLink" href="#" onclick="showDangKy()">Đăng kí</a>
+          </p>
+        </div>
+        <div id="divdangnhap">
+          <h2 id="login">Đăng nhập</h2>
+          <form id="dangnhap">
+            <div id="type">
+              <label for="user">Tài khoản</label>
+              <input type="text" id="user" required /><br />
+              <label for="pass">Mật khẩu </label>
+              <input type="password" id="pass" required /><br />
+            </div>
+            <div class="show-password">
+              <input type="checkbox" id="show" onclick="showMatKhau()" />
+              <label for="show">Bạn có muốn hiển thị mật khẩu không?</label>
+            </div>
+            <div id="button">
+              <button id="Submit">Đăng nhập</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- dangky -->
+        <div id="divdangky">
+          <h2 id="signup">Đăng ký</h2>
+          <form id="dangky">
+            <div>
+              <label for="name">Họ và tên : </label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Họ và tên"
+                required
+              /><br />
+              <label for="birthday">Ngày Sinh : </label>
+              <input type="date" name="birthday" required /><br />
+              <label for="gender">Giới tính :</label>
+              <select name="gender" id="gender" required>
+                <option value="male">Nam</option>
+                <option value="femlae">Nữ</option></select
+              ><br />
+              <label for="email">Email : </label>
+              <input type="email" name="email" required /><br />
+              <label for="phone">Số điện thoại : </label>
+              <input type="tel" required /><br />
+              <label for="user">Tài khoản</label>
+              <input type="text" id="user" required /><br />
+              <label for="pass">Mật khẩu </label>
+              <input type="password" id="pass" required /><br />
+              <label for="pass">Nhập lại mật khẩu</label>
+              <input type="password" id="pass_2" required /><br />
+              <button id="Submit">Đăng ký</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

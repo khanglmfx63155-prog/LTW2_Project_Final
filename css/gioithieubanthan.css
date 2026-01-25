@@ -1,0 +1,96 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.avatar {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+
+h1 {
+  font-size: 47px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+p {
+  font-size: 24px;
+}
+s a {
+  text-decoration: none;
+  color: #000;
+}
+
+.content {
+  margin: 0 auto;
+  text-align: left;
+  width: 430px;
+}
+
+.du_an {
+  font-size: 24px;
+}
+
+.slideshow {
+  text-align: center;
+}
+
+.sumamry {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 50px 10px;
+}
+
+#projects {
+  margin: 30px;
+}
+
+.project {
+  text-align: center;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.project a {
+  display: block;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.project img {
+  margin-top: 25px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.project p {
+  font-size: 20px;
+}
+
+.navigation {
+  display: flex;
+  height: 60px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #0058a5;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 0 25px;
+}
+
+.navigation a:hover {
+  color: orange;
+}

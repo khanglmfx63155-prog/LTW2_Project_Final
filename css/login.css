@@ -1,0 +1,155 @@
+#dangnhap {
+  width: 380px;
+  padding: 30px 35px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background: #fff;
+}
+
+#dangky {
+  width: 380px;
+  padding: 30px 35px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background: #fff;
+}
+#divdangky {
+  display: none;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+.left {
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
+.listVideo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.listVideo iframe {
+  width: 100%;
+  height: 300px;
+}
+
+button,
+.loginLink,
+.signupLink,
+.watchLink {
+  background-color: #0600cd;
+  color: white;
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 10px 0;
+  border: #000000 solid 2px;
+}
+
+/* ===== THÊM GIAO DIỆN GIỐNG MẪU ===== */
+
+body {
+  margin: 0;
+  background: repeating-linear-gradient(
+    135deg,
+    #f5f5f5,
+    #f5f5f5 30px,
+    #eeeeee 30px,
+    #eeeeee 60px
+  );
+}
+
+/* HEADER */
+.header {
+  background: #4f86b5;
+  color: white;
+  padding: 12px 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* FOOTER */
+body::after {
+  content: "Liên hệ: 0123456789     Hòm thư điện tử: fakemail@gmail.com";
+  display: block;
+  background: #4f86b5;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 60px;
+}
+
+/* LEFT */
+.left h2 {
+  font-size: 28px;
+}
+
+.left p {
+  margin: 15px 0;
+}
+
+/* BOX LOGIN / SIGNUP */
+#dangnhap,
+#dangky {
+  background: #6fa0e5;
+  color: white;
+  border: none;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.35);
+}
+
+#divdangnhap,
+#divdangky {
+  justify-self: center;
+}
+
+/* INPUT */
+input {
+  margin-bottom: 5px;
+}
+
+#dangnhap input,
+#dangky input,
+#dangky select {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+  border-radius: 3px;
+  border: none;
+}
+
+/* BUTTON */
+button {
+  width: 140px;
+  font-weight: bold;
+}
+
+/* TITLE */
+#login,
+#signup {
+  text-align: center;
+}
+#submit {
+  padding-top: 10px;
+}
+
+.show-password {
+  display: flex;
+  align-items: left;
+  padding-top: 10px;
+}
+
+.show-password #show {
+  width: fit-content !important;
+}
+
+.home {
+  text-decoration: none;
+}
