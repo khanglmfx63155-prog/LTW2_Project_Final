@@ -26,10 +26,12 @@ checkboxShow.addEventListener("change", function () {
 //     }
 //   };
 // }
-
 const btn = document.getElementById("Submit");
 
-function checkLogIn() {
+function checkLogIn(e) {
+  e.preventDefault();
+  let user = document.getElementById("user").value;
+  let pass = document.getElementById("pass").value;
   if (user === "" || pass === "") {
     alert("Vui lòng nhập đầy đủ Username và Password!");
   } else {
